@@ -50,3 +50,4 @@ do not have lights they do require a flashlight to illuminate (for the look comm
 of the game.
 ● If the user exits a special door representing the Maze exit point, they win.
 ● If the timer of the map (time given is a property of the given map) elapses without exiting the maze it is a loss.
+	
