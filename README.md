@@ -1,34 +1,34 @@
 # worldNavigator
-##The idea is to write a console game where the user issues commands to navigate and act on a map.
-##The map is made of a graph of Rooms.
-##Each room can be thought of as a logical square and has four walls, a wall can have a painting, a chest, a
+## The idea is to write a console game where the user issues commands to navigate and act on a map.
+## The map is made of a graph of Rooms.
+## Each room can be thought of as a logical square and has four walls, a wall can have a painting, a chest, a
 mirror, a door, a seller or is just a plain wall. The player starts at the <Start> room and is facing one of the four
 walls and if the map specifies, the player can start with an initial amount of gold.
-##Commands:
+## Commands:
 ### Navigation commands:
 left, right, forward, backward, playerstatus (gives which direction the player is
 facing North, South, West, East and the amount of gold and items that he has)
 ### Forward and backward
 will only move through open doors and left and right will change the orientation of
 the player.
-###look:
+### look:
 this command returns the following (Does not work if the room is dark):
 #### Dark , if the room is not lit.
 #### Door , if the room is lit and the player is facing a door.
-####Wall , if the room is lit and the player is facing an empty wall.
-####Chest , if the room is lit and the player is facing a chest.
+#### Wall , if the room is lit and the player is facing an empty wall.
+#### Chest , if the room is lit and the player is facing a chest.
 #### Painting , if the room is lit and the player is facing a painting.
 #### Seller , if the room is lit and the player is facing a Seller.
 #### You See a silhouette of you if the room is lit and the player is facing a mirror.
 ## Check:
 this command takes these arguments:
-####Mirror:
+#### Mirror:
 will work only if facing a mirror, if a key is hidden behind the mirror will acquire the named
 key “The <name> key was acquired”.
-####Painting:
+#### Painting:
 will work only if facing a painting, if a key is hidden behind the painting will acquire the
 named key “The <name> key was acquired”.
-####Chest: 
+#### Chest: 
 will work only if facing a chest, if the chest is closed “chest closed <name> key is needed
 to unlock”, if it is open the items inside the chest are listed and looted/acquired and could contain
 (named key, flashlight, or N gold where N is either a random number or a specific number set by
@@ -36,7 +36,7 @@ the map).
 #### Door: 
 will work only if facing a door, if the door is locked “Door is locked, <name> key is needed
 to unlock” and if it is open “Door is open”.
-###Open
+### Open:
 will open a door if the player is facing a door and it is unlocked and if the door is open “nothing
 happens” or if locked “<named> key required to unlock”
 ### Trade
