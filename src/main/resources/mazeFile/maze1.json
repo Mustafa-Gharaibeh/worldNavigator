@@ -1,0 +1,1522 @@
+{
+  "mazeName": "maze1",
+  "initialGamerGold": {
+    "@type": "Gold",
+    "amount": 6
+  },
+  "playingTimeMin": 5,
+  "mazeGraph": {
+    "firstKey": {
+      "roomName": "Room1",
+      "walls": {
+        "NORTH": {
+          "onWall": {
+            "@type": "Door",
+            "finalDoor": false,
+            "DoorName": "First Door",
+            "acquirable": {
+              "@type": "UnAcquirable"
+            },
+            "lockable": {
+              "@type": "LockableImpl",
+              "lockKey": {
+                "@type": "Key",
+                "keyName": "Open",
+                "price": {
+                  "@type": "Gold",
+                  "amount": 0
+                }
+              },
+              "lock": false
+            }
+          }
+        },
+        "SOUTH": {
+          "onWall": {
+            "@type": "PlainWall",
+            "acquirable": {
+              "@type": "UnAcquirable"
+            },
+            "lockable": {
+              "@type": "NotLockable"
+            }
+          }
+        },
+        "WEST": {
+          "onWall": {
+            "@type": "Mirror",
+            "acquirable": {
+              "@type": "AcquirableImpl",
+              "MaterialMap": {
+                "green key": {
+                  "@type": "Key",
+                  "keyName": "green key",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 1
+                  }
+                }
+              }
+            },
+            "lockable": {
+              "@type": "NotLockable"
+            }
+          }
+        },
+        "EAST": {
+          "onWall": {
+            "@type": "Painting",
+            "acquirable": {
+              "@type": "AcquirableImpl",
+              "MaterialMap": {
+                "red key": {
+                  "@type": "Key",
+                  "keyName": "red key",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 2
+                  }
+                }
+              }
+            },
+            "lockable": {
+              "@type": "NotLockable"
+            }
+          }
+        }
+      },
+      "roomLightingStatus": {
+        "isARoomHasLights": true
+      }
+    },
+    "keys": [
+      {
+        "roomName": "Room1",
+        "walls": {
+          "NORTH": {
+            "onWall": {
+              "@type": "Door",
+              "finalDoor": false,
+              "DoorName": "First Door",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "LockableImpl",
+                "lockKey": {
+                  "@type": "Key",
+                  "keyName": "Open",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 0
+                  }
+                },
+                "lock": false
+              }
+            }
+          },
+          "SOUTH": {
+            "onWall": {
+              "@type": "PlainWall",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "NotLockable"
+              }
+            }
+          },
+          "WEST": {
+            "onWall": {
+              "@type": "Mirror",
+              "acquirable": {
+                "@type": "AcquirableImpl",
+                "MaterialMap": {
+                  "green key": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  }
+                }
+              },
+              "lockable": {
+                "@type": "NotLockable"
+              }
+            }
+          },
+          "EAST": {
+            "onWall": {
+              "@type": "Painting",
+              "acquirable": {
+                "@type": "AcquirableImpl",
+                "MaterialMap": {
+                  "red key": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  }
+                }
+              },
+              "lockable": {
+                "@type": "NotLockable"
+              }
+            }
+          }
+        },
+        "roomLightingStatus": {
+          "isARoomHasLights": true
+        }
+      },
+      {
+        "roomName": "Room2",
+        "walls": {
+          "NORTH": {
+            "onWall": {
+              "@type": "Door",
+              "finalDoor": true,
+              "DoorName": "Final Door",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "LockableImpl",
+                "lockKey": {
+                  "@type": "Key",
+                  "keyName": "final key",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 4
+                  }
+                },
+                "lock": true
+              }
+            }
+          },
+          "SOUTH": {
+            "onWall": {
+              "@type": "Door",
+              "finalDoor": false,
+              "DoorName": "First Door",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "LockableImpl",
+                "lockKey": {
+                  "@type": "Key",
+                  "keyName": "Open",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 0
+                  }
+                },
+                "lock": false
+              }
+            }
+          },
+          "WEST": {
+            "onWall": {
+              "@type": "Door",
+              "finalDoor": false,
+              "DoorName": "Green Door",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "LockableImpl",
+                "lockKey": {
+                  "@type": "Key",
+                  "keyName": "green key",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 1
+                  }
+                },
+                "lock": true
+              }
+            }
+          },
+          "EAST": {
+            "onWall": {
+              "@type": "Door",
+              "finalDoor": false,
+              "DoorName": "Red Door",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "LockableImpl",
+                "lockKey": {
+                  "@type": "Key",
+                  "keyName": "red key",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 2
+                  }
+                },
+                "lock": true
+              }
+            }
+          }
+        },
+        "roomLightingStatus": {
+          "isARoomHasLights": true
+        }
+      },
+      {
+        "roomName": "Room3",
+        "walls": {
+          "NORTH": {
+            "onWall": {
+              "@type": "Painting",
+              "acquirable": {
+                "@type": "AcquirableImpl",
+                "MaterialMap": {
+                  "chest key": {
+                    "@type": "Key",
+                    "keyName": "chest key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  }
+                }
+              },
+              "lockable": {
+                "@type": "NotLockable"
+              }
+            }
+          },
+          "SOUTH": {
+            "onWall": {
+              "@type": "PlainWall",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "NotLockable"
+              }
+            }
+          },
+          "WEST": {
+            "onWall": {
+              "@type": "Door",
+              "finalDoor": false,
+              "DoorName": "Red Door",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "LockableImpl",
+                "lockKey": {
+                  "@type": "Key",
+                  "keyName": "red key",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 2
+                  }
+                },
+                "lock": true
+              }
+            }
+          },
+          "EAST": {
+            "onWall": {
+              "@type": "Seller",
+              "items": {
+                "flashlight": {
+                  "@type": "Flashlight",
+                  "flashlightName": "flashlight",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 3
+                  }
+                }
+              },
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "NotLockable"
+              }
+            }
+          }
+        },
+        "roomLightingStatus": {
+          "isARoomHasLights": true
+        }
+      },
+      {
+        "roomName": "Room4",
+        "walls": {
+          "NORTH": {
+            "onWall": {
+              "@type": "Chest",
+              "acquirable": {
+                "@type": "AcquirableImpl",
+                "MaterialMap": {
+                  "final key": {
+                    "@type": "Key",
+                    "keyName": "final key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 4
+                    }
+                  }
+                }
+              },
+              "lockable": {
+                "@type": "LockableImpl",
+                "lockKey": {
+                  "@type": "Key",
+                  "keyName": "chest key",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 1
+                  }
+                },
+                "lock": true
+              }
+            }
+          },
+          "SOUTH": {
+            "onWall": {
+              "@type": "PlainWall",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "NotLockable"
+              }
+            }
+          },
+          "WEST": {
+            "onWall": {
+              "@type": "PlainWall",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "NotLockable"
+              }
+            }
+          },
+          "EAST": {
+            "onWall": {
+              "@type": "Door",
+              "finalDoor": false,
+              "DoorName": "Green Door",
+              "acquirable": {
+                "@type": "UnAcquirable"
+              },
+              "lockable": {
+                "@type": "LockableImpl",
+                "lockKey": {
+                  "@type": "Key",
+                  "keyName": "green key",
+                  "price": {
+                    "@type": "Gold",
+                    "amount": 1
+                  }
+                },
+                "lock": true
+              }
+            }
+          }
+        },
+        "roomLightingStatus": {
+          "isARoomHasLights": false
+        }
+      }
+    ],
+    "map": {
+      "Room1": [
+        {
+          "roomName": "Room2",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": true,
+                "DoorName": "Final Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "final key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 4
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "First Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "Open",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 0
+                    }
+                  },
+                  "lock": false
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Green Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Red Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        },
+        {
+          "roomName": "Room2",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": true,
+                "DoorName": "Final Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "final key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 4
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "First Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "Open",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 0
+                    }
+                  },
+                  "lock": false
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Green Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Red Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        }
+      ],
+      "Room2": [
+        {
+          "roomName": "Room1",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "First Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "Open",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 0
+                    }
+                  },
+                  "lock": false
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "PlainWall",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Mirror",
+                "acquirable": {
+                  "@type": "AcquirableImpl",
+                  "MaterialMap": {
+                    "green key": {
+                      "@type": "Key",
+                      "keyName": "green key",
+                      "price": {
+                        "@type": "Gold",
+                        "amount": 1
+                      }
+                    }
+                  }
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Painting",
+                "acquirable": {
+                  "@type": "AcquirableImpl",
+                  "MaterialMap": {
+                    "red key": {
+                      "@type": "Key",
+                      "keyName": "red key",
+                      "price": {
+                        "@type": "Gold",
+                        "amount": 2
+                      }
+                    }
+                  }
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        },
+        {
+          "roomName": "Room3",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Painting",
+                "acquirable": {
+                  "@type": "AcquirableImpl",
+                  "MaterialMap": {
+                    "chest key": {
+                      "@type": "Key",
+                      "keyName": "chest key",
+                      "price": {
+                        "@type": "Gold",
+                        "amount": 1
+                      }
+                    }
+                  }
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "PlainWall",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Red Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Seller",
+                "items": {
+                  "flashlight": {
+                    "@type": "Flashlight",
+                    "flashlightName": "flashlight",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 3
+                    }
+                  }
+                },
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        },
+        {
+          "roomName": "Room1",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "First Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "Open",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 0
+                    }
+                  },
+                  "lock": false
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "PlainWall",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Mirror",
+                "acquirable": {
+                  "@type": "AcquirableImpl",
+                  "MaterialMap": {
+                    "green key": {
+                      "@type": "Key",
+                      "keyName": "green key",
+                      "price": {
+                        "@type": "Gold",
+                        "amount": 1
+                      }
+                    }
+                  }
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Painting",
+                "acquirable": {
+                  "@type": "AcquirableImpl",
+                  "MaterialMap": {
+                    "red key": {
+                      "@type": "Key",
+                      "keyName": "red key",
+                      "price": {
+                        "@type": "Gold",
+                        "amount": 2
+                      }
+                    }
+                  }
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        },
+        {
+          "roomName": "Room4",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Chest",
+                "acquirable": {
+                  "@type": "AcquirableImpl",
+                  "MaterialMap": {
+                    "final key": {
+                      "@type": "Key",
+                      "keyName": "final key",
+                      "price": {
+                        "@type": "Gold",
+                        "amount": 4
+                      }
+                    }
+                  }
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "chest key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "PlainWall",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "PlainWall",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Green Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": false
+          }
+        },
+        {
+          "roomName": "Room3",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Painting",
+                "acquirable": {
+                  "@type": "AcquirableImpl",
+                  "MaterialMap": {
+                    "chest key": {
+                      "@type": "Key",
+                      "keyName": "chest key",
+                      "price": {
+                        "@type": "Gold",
+                        "amount": 1
+                      }
+                    }
+                  }
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "PlainWall",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Red Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Seller",
+                "items": {
+                  "flashlight": {
+                    "@type": "Flashlight",
+                    "flashlightName": "flashlight",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 3
+                    }
+                  }
+                },
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        },
+        {
+          "roomName": "Room4",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Chest",
+                "acquirable": {
+                  "@type": "AcquirableImpl",
+                  "MaterialMap": {
+                    "final key": {
+                      "@type": "Key",
+                      "keyName": "final key",
+                      "price": {
+                        "@type": "Gold",
+                        "amount": 4
+                      }
+                    }
+                  }
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "chest key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "PlainWall",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "PlainWall",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "NotLockable"
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Green Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": false
+          }
+        }
+      ],
+      "Room3": [
+        {
+          "roomName": "Room2",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": true,
+                "DoorName": "Final Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "final key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 4
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "First Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "Open",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 0
+                    }
+                  },
+                  "lock": false
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Green Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Red Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        },
+        {
+          "roomName": "Room2",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": true,
+                "DoorName": "Final Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "final key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 4
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "First Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "Open",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 0
+                    }
+                  },
+                  "lock": false
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Green Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Red Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        }
+      ],
+      "Room4": [
+        {
+          "roomName": "Room2",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": true,
+                "DoorName": "Final Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "final key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 4
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "First Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "Open",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 0
+                    }
+                  },
+                  "lock": false
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Green Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Red Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        },
+        {
+          "roomName": "Room2",
+          "walls": {
+            "NORTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": true,
+                "DoorName": "Final Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "final key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 4
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "SOUTH": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "First Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "Open",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 0
+                    }
+                  },
+                  "lock": false
+                }
+              }
+            },
+            "WEST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Green Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "green key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 1
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            },
+            "EAST": {
+              "onWall": {
+                "@type": "Door",
+                "finalDoor": false,
+                "DoorName": "Red Door",
+                "acquirable": {
+                  "@type": "UnAcquirable"
+                },
+                "lockable": {
+                  "@type": "LockableImpl",
+                  "lockKey": {
+                    "@type": "Key",
+                    "keyName": "red key",
+                    "price": {
+                      "@type": "Gold",
+                      "amount": 2
+                    }
+                  },
+                  "lock": true
+                }
+              }
+            }
+          },
+          "roomLightingStatus": {
+            "isARoomHasLights": true
+          }
+        }
+      ]
+    },
+    "Edges": 6
+  }
+}
