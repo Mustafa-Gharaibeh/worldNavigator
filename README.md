@@ -1,7 +1,7 @@
 # worldNavigator
 ## The idea is to write a console game where the user issues commands to navigate and act on a map.
 ## The map is made of a graph of Rooms.
-## Each room can be thought of as a logical square and has four walls, a wall can have a painting, a chest, a
+Each room can be thought of as a logical square and has four walls, a wall can have a painting, a chest, a
 mirror, a door, a seller or is just a plain wall. The player starts at the <Start> room and is facing one of the four
 walls and if the map specifies, the player can start with an initial amount of gold.
 ## Commands:
